@@ -87,16 +87,16 @@ The server will initialize the vector store on first run (may take 1-2 minutes).
 curl -X POST http://localhost:3000/agent/message \
   -H "Content-Type: application/json" \
   -d '{
-    "message": "What is markdown?",
-    "session_id": "user123"
+    "message": "Tell me about Blogging With Markdown: All You Need to Know",
+    "session_id": "123"
   }'
 
 # Follow-up with memory
 curl -X POST http://localhost:3000/agent/message \
   -H "Content-Type: application/json" \
   -d '{
-    "message": "Can you elaborate on that?",
-    "session_id": "user123"
+    "message": "can you elaborate on Tell me about Blogging With Markdown: All You Need to Know",
+    "session_id": "123"
   }'
 
 # Weather plugin trigger
@@ -104,7 +104,7 @@ curl -X POST http://localhost:3000/agent/message \
   -H "Content-Type: application/json" \
   -d '{
     "message": "What is the weather in Bangalore?",
-    "session_id": "user123"
+    "session_id": "123"
   }'
 ```
 
